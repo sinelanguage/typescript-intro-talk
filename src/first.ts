@@ -33,3 +33,24 @@ let anotherSentence: string = `${hondaHorsepower[0]} has ${
   (hondaHorsepower[1], hondaHorsepower[2])
 }`;
 console.log(anotherSentence);
+
+// Enum
+// Helps give more human readable names to numeric values.
+enum FamilyAges {
+  Adam,
+  Sylvia,
+  Cassia,
+  Roxie,
+}
+let cassiaAge: FamilyAges = FamilyAges.Cassia;
+
+console.log(cassiaAge);
+
+// The first value of the first item in an enum is 0, but if you assign it a new value that's what the enum will start at.
+
+enum myMomAndDadsAge {
+  Mom = 66,
+  Dad,
+}
+let myDadsFakeAge: myMomAndDadsAge = myMomAndDadsAge.Dad;
+console.log(myDadsFakeAge); // should log 67 which comes after 66 even thought my dad is really 71

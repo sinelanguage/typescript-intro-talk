@@ -21,5 +21,24 @@ let hondaHorsepower = [
     210,
     "bhp",
 ];
-let anotherSentence = `${hondaHorsepower[0]} has ${(hondaHorsepower[1], hondaHorsepower[2])}}`;
+let anotherSentence = `${hondaHorsepower[0]} has ${(hondaHorsepower[1], hondaHorsepower[2])}`;
 console.log(anotherSentence);
+// Enum
+// Helps give more human readable names to numeric values.
+var FamilyAges;
+(function (FamilyAges) {
+    FamilyAges[FamilyAges["Adam"] = 0] = "Adam";
+    FamilyAges[FamilyAges["Sylvia"] = 1] = "Sylvia";
+    FamilyAges[FamilyAges["Cassia"] = 2] = "Cassia";
+    FamilyAges[FamilyAges["Roxie"] = 3] = "Roxie";
+})(FamilyAges || (FamilyAges = {}));
+let cassiaAge = FamilyAges.Cassia;
+console.log(cassiaAge);
+// The first value of the first item in an enum is 0, but if you assign it a new value that's what the enum will start at.
+var myMomAndDadsAge;
+(function (myMomAndDadsAge) {
+    myMomAndDadsAge[myMomAndDadsAge["Mom"] = 66] = "Mom";
+    myMomAndDadsAge[myMomAndDadsAge["Dad"] = 67] = "Dad";
+})(myMomAndDadsAge || (myMomAndDadsAge = {}));
+let myDadsFakeAge = myMomAndDadsAge.Dad;
+console.log(myDadsFakeAge);
