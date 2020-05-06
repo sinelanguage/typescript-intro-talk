@@ -10,6 +10,7 @@ myWifesAge = 42;
 let fullName: string = "Adam Winick";
 let age: number = 44;
 let sentence: string = `Wzup ${fullName}, next year i'll be ${age + 1}`;
+
 console.log(sentence);
 
 // Arrays
@@ -32,6 +33,7 @@ let hondaHorsepower: [string, number, string] = [
 let anotherSentence: string = `${hondaHorsepower[0]} has ${
   (hondaHorsepower[1], hondaHorsepower[2])
 }`;
+
 console.log(anotherSentence);
 
 // Enum
@@ -42,6 +44,7 @@ enum FamilyAges {
   Cassia,
   Roxie,
 }
+
 let cassiaAge: FamilyAges = FamilyAges.Cassia;
 
 console.log(cassiaAge);
@@ -52,5 +55,7 @@ enum myMomAndDadsAge {
   Mom = 66,
   Dad,
 }
+
 let myDadsFakeAge: myMomAndDadsAge = myMomAndDadsAge.Dad;
+
 console.log(myDadsFakeAge); // should log 67 which comes after 66 even thought my dad is really 71
