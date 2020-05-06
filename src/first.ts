@@ -22,7 +22,7 @@ let someNumbers: number[] = [1, 2, 3];
 let someMoreMNumbers: Array<number> = [4, 5, 6];
 
 // Tuples
-// A way to express an array with a fixed number of elements who types are known but don't /// need to be the same
+// A way to express an array with a fixed number of elements who types are known but don't need to be the same
 
 let hondaHorsepower: [string, number, string] = [
   "Honda Civic Si Coupe",

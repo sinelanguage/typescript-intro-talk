@@ -15,7 +15,7 @@ let someNumbers = [1, 2, 3];
 // second is a generic array type Array<typeOfElements>
 let someMoreMNumbers = [4, 5, 6];
 // Tuples
-// A way to express an array with a fixed number of elements who types are known but don't /// need to be the same
+// A way to express an array with a fixed number of elements who types are known but don't need to be the same
 let hondaHorsepower = [
     "Honda Civic Si Coupe",
     210,
@@ -41,4 +41,4 @@ var myMomAndDadsAge;
     myMomAndDadsAge[myMomAndDadsAge["Dad"] = 67] = "Dad";
 })(myMomAndDadsAge || (myMomAndDadsAge = {}));
 let myDadsFakeAge = myMomAndDadsAge.Dad;
-console.log(myDadsFakeAge);
+console.log(myDadsFakeAge); // should log 67 which comes after 66 even thought my dad is really 71
